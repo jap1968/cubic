@@ -8,8 +8,8 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
     <style>
     #panorama {
-        width: 600px;
-        height: 400px;
+        width: 100%;
+        height: 512px;
     }
     </style>
 </head>
@@ -19,6 +19,8 @@
 <script>
 pannellum.viewer('panorama', {
     "type": "cubemap",
+    "autoLoad": true,
+    "yaw": 180,
     "cubeMap": [
         "../img/car1/D-_Imagenes_sesiones_20180327-BMW-330-Ci_360_pro_bmwsinmeta_cube_o_0.jpg",
         "../img/car1/D-_Imagenes_sesiones_20180327-BMW-330-Ci_360_pro_bmwsinmeta_cube_o_1.jpg",
